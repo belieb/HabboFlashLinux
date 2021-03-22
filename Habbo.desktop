@@ -1,0 +1,7 @@
+[Desktop Entry]
+Name=Habbo
+Exec=wine "C:\\\\Program\\ Files\\ (x86)\\\\Sulake\\\\HabboFlash\\\\Habbo.exe"
+Type=Application
+StartupNotify=true
+Icon=/usr/share/icons/Habbo/icon48.png
+StartupWMClass=habbo.exe
