@@ -9,9 +9,9 @@ if [ -d "$HOME/.wine/drive_c/Program Files (x86)/Sulake" ]; then
 	echo "Installing Habbo Flash client..."
 fi
 
-# Start with installing wine, but only if .wine directory doens't exist.
+# Start with installing wine, but only if .wine directory doens't exist. Using version 6.0.0, since 6.0.1 broke the client.
 if [ ! -d "$HOME/.wine" ]; then
-	sudo dpkg --add-architecture i386 && wget -nc https://dl.winehq.org/wine-builds/winehq.key && sudo apt-key add winehq.key && echo "deb https://dl.winehq.org/wine-builds/debian/ buster main" | sudo tee /etc/apt/sources.list.d/wine.list && echo "deb https://download.opensuse.org/repositories/Emulators:/Wine:/Debian/Debian_10 ./" | sudo tee /etc/apt/sources.list.d/winehq.list && sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys DFA175A75104960E && sudo apt update && sudo apt install -y --install-recommends winehq-stable
+	sudo dpkg --add-architecture i386 && wget -nc https://dl.winehq.org/wine-builds/winehq.key && sudo apt-key add winehq.key && echo "deb https://dl.winehq.org/wine-builds/debian/ buster main" | sudo tee /etc/apt/sources.list.d/wine.list && echo "deb https://download.opensuse.org/repositories/Emulators:/Wine:/Debian/Debian_10 ./" | sudo tee /etc/apt/sources.list.d/winehq.list && sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys DFA175A75104960E && sudo apt update && sudo apt install -y --install-recommends winehq-stable=6.0.0~buster-1 wine-stable=6.0.0~buster-1 wine-stable-amd64=6.0.0~buster-1 wine-stable-i386=6.0.0~buster-1
 
 	wineboot --init
 	wineserver -k
