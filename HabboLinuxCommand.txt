@@ -1,0 +1,1 @@
+wget https://raw.githubusercontent.com/belieb/HabboFlashLinux/main/HabboLinuxInstall.sh && sudo chmod +x HabboLinuxInstall.sh && ./HabboLinuxInstall.sh
