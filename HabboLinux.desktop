@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=HabboLinux
+Exec=/bin/sh -c "$HOME/HabboFlash_Release3_Linux_x64/HabboFlash"
+#Exec=./HabboFlash_Release3_Linux_x64/HabboFlash
+Type=Application
+StartupNotify=true
+Icon=/usr/share/icons/HabboLinux/AppIcon.png
+StartupWMClass=HabboFlash
